@@ -1,7 +1,4 @@
-# Assignment
----
-
-## Assignment I: Build Your Own GitHub Repository
+# Assignment I: Build Your Own GitHub Repository
 
 - **GitHub account:**  https://github.com/tim9910
 - **Course Repository:**  11401_CS203A

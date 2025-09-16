@@ -2,5 +2,5 @@ site_name: TIM CS203A Notes
 nav:
   - HOME: index.md
   - Course Notes: notes.md
-  - Homework: homework.md  
+  - Assignment: homework.md  
 theme: readthedocs
