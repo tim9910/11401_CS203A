@@ -1,10 +1,4 @@
 site_name: TIM CS203A Notes
-nav:
-  - 首頁: index.md
-theme: readthedocs
-
-
-site_name: TIM CS203A Notes
 site_url: https://tim9910-11401cs203a.readthedocs.io/
 repo_url: https://github.com/tim9910/11401_CS203A
 
