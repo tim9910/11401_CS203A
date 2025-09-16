@@ -6,7 +6,7 @@
 - [課程資訊](#課程資訊)
 - [個人資訊](#個人資訊)
 - [儲存庫描述](#儲存庫描述)
-- [個人網頁](#個人網頁(ReadtheDocs))
+- [個人網頁](#ReadtheDocs個人網頁)
 
 ---
 
@@ -35,5 +35,5 @@
 
 ---
 
-## 個人網頁(ReadtheDocs)
-- [個人網頁](https://11401-cs203a.readthedocs.io/)
+## ReadtheDocs個人網頁
+- [https://11401-cs203a.readthedocs.io/](https://11401-cs203a.readthedocs.io/)
