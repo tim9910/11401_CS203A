@@ -6,7 +6,7 @@
 - [課程資訊](#課程資訊)
 - [個人資訊](#個人資訊)
 - [儲存庫描述](#儲存庫描述)
-- [課程記錄/ReadtheDocs](#課程記錄 vs ReadtheDocs)
+- [課程記錄/ReadtheDocs](#課程記錄vsReadtheDocs)
 
 ---
 
@@ -35,6 +35,6 @@
 
 ---
 
-## 課程記錄 vs ReadtheDocs
+## 課程記錄vsReadtheDocs
 
 - [https://tim9910-11401cs203a.readthedocs.io/](https://tim9910-11401cs203a.readthedocs.io/)
