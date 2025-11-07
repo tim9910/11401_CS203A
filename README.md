@@ -36,9 +36,9 @@
 
 | 作業 | 說明 | 詳細連結 |
 |:------|:------|:---------|
-| Assignment I | 建立 GitHub 儲存庫並啟用 GitHub Pages | [查看詳細](./AssignmentI/README.md#assignment-i-—-build-your-own-github-repository) |
-| Assignment II | 陣列選擇排序（Array Selection Sort）手寫作業 | [查看詳細](./AssignmentII/README.md#assignment-ii-—-array-selection-sort) |
-| Assignment III | Linked List 選擇排序（Swap Value Version）手寫作業 | [查看詳細](./AssignmentIII/README.md#assignment-iii-—-linked-list-selection-sort-swap-value-version) |
+| Assignment I | 建立 GitHub 儲存庫並啟用 GitHub Pages | [查看詳細](./Assignment/README.md#assignment-i-—-build-your-own-github-repository) |
+| Assignment II | 陣列選擇排序（Array Selection Sort）手寫作業 | [查看詳細](./Assignment/README.md#assignment-ii-—-array-selection-sort) |
+| Assignment III | Linked List 選擇排序（Swap Value Version）手寫作業 | [查看詳細](./Assignment/README.md#assignment-iii-—-linked-list-selection-sort-swap-value-version) |
 
 
 ---
