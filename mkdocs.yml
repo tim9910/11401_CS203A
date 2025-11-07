@@ -1,6 +1,28 @@
 site_name: TIM CS203A Notes
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: teal
+    accent: amber
+  font:
+    text: Roboto
+    code: Fira Code
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - pymdownx.betterem
+  - pymdownx.arithmatex
+  - toc:
+      permalink: true
+
 nav:
-  - HOME: index.md
-  - Course Notes: notes.md
-  - Assignment: homework.md  
-theme: readthedocs
+  - 首頁: index.md
+  - 課程記錄:  
+    - 動態記憶體: notes/dynamic.md
+    - 鏈結串列: notes/linklist.md
+    - 陣列(Array): notes/array.md
+  - 作業: 
+    - Assignment1: homework.md
