@@ -1,22 +1,5 @@
 site_name: TIM CS203A Notes
-theme:
-  name: material
-  palette:
-    scheme: default
-    primary: teal
-    accent: amber
-  font:
-    text: Roboto
-    code: Fira Code
-markdown_extensions:
-  - admonition
-  - pymdownx.superfences
-  - pymdownx.tabbed
-  - pymdownx.snippets
-  - pymdownx.betterem
-  - pymdownx.arithmatex
-  - toc:
-      permalink: true
+theme: readthedocs
 
 nav:
   - 首頁: index.md
