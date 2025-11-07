@@ -9,13 +9,6 @@
 **目標**  
 > 學會使用 GitHub 建立儲存庫、維護 README、並透過 GitHub 記錄學習歷程。
 
-**內容摘要**
-- 建立儲存庫：`11401_CS203A`
-- 啟用 GitHub Pages（網址：https://{username}.github.io/）
-- 撰寫個人化 `README.md`（含姓名、學號、課程簡介）
-- （可選）嘗試 ReadTheDocs 或自訂網域
-- [Read details](./AssignmentI/Assignment_I.pdf)
-
 **內容說明**
 | 類別 | 說明 | 檔案位置 |
 |:------|:------|:---------|
