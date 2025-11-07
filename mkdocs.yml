@@ -1,6 +1,7 @@
 site_name: TIM CS203A Notes
 theme: readthedocs
-
+markdown_extensions:
+  - admonition
 nav:
   - 首頁: index.md
   - 課程記錄:  
