@@ -12,7 +12,7 @@
 | 作答方式 | 必須使用筆手寫，逐步呈現每一次節點值交換的過程 | — |
 | 繳交方式 | 紙本繳交至 R60104 教室 | — |
 | 截止時間 | 2025/10/20（週一）10:00 截止 | — |
-| 參考答案 | 官方提供之答案檔（僅供對照學習） | [`Assignment_III_Answer.pdf`](https://github.com/tim9910/11401_CS203A/blob/main/Assignment/AssignmentIII/Assignment_III_Answer.pdf) |
+| 參考答案 | 參考答案檔 | [`Assignment_III_Answer.pdf`](https://github.com/tim9910/11401_CS203A/blob/main/Assignment/AssignmentIII/Assignment_III_Answer.pdf) |
 
 **進度狀態**：✅ 已繳交  
 **完成日期**：2025/10/20（週一）
