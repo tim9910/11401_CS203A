@@ -8,5 +8,7 @@ nav:
     - 動態記憶體: notes/dynamic.md
     - 鏈結串列: notes/linklist.md
     - 陣列(Array): notes/array.md
+    - 堆疊vs佇列: notes/stackqueue.md    
+    - 雜湊表: notes/hashtable.md
   - 作業: 
     - Assignment1: homework.md

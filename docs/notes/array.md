@@ -20,7 +20,6 @@
 
 ## 4️⃣ Array Declaration
 - Static Array
-> 
 ```c
 //宣告
 int a[10];	
@@ -37,7 +36,6 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 - Dynamic Array
->
 ```c
 
 //宣告與記憶體配置
@@ -57,11 +55,10 @@ for (int i = 0; i < 10; i++) {
 
 ```
 
-## 5️⃣ 調整陣列大小
-- 使用 realloc() 將原本的陣列空間擴大為原本的兩倍。 
-- 如果 realloc() 成功 → 新陣列自動包含原資料；失敗 → 必須處理記憶體釋放避免記憶體洩漏（free()）
->
+- Resize
 ```c
+//使用 realloc() 將原本的陣列空間擴大為原本的兩倍。 
+//如果 realloc() 成功 → 新陣列自動包含原資料；失敗 → 必須處理記憶體釋放避免記憶體洩漏（free()）
 n = n * 2;
 int *temp = (int *) realloc(a, n * sizeof(int)); 
 if (temp == NULL) { 
@@ -69,39 +66,39 @@ if (temp == NULL) {
 	return -1; 
 }
 ```
-## 6️⃣ Practice 
+## 5️⃣ Practice 
 - LeetCode 704 - Binary Search（二分查找）
->
 ```c
 class Solution { 
 public: 
 	int search(vector<int>& nums, int target) { 
-		int low = 0; 
-		int high = nums.size() - 1;
+		int low = 0; 				//起始位置
+		int high = nums.size() - 1;	//結束位置
 		while (low <= high) { 
-			int mid = (low + high) / 2;
+			int mid = (low + high) / 2;	// 取中間index
 			if (nums[mid] == target) 
-				return mid; 
-			else if (nums[mid] > target) 
+				return mid; 	//找到回傳index
+			else if (nums[mid] > target) 	//往左邊找
 				high = mid - 1; 
-			else 
+			else //往右邊找
 				low = mid + 1; 
 		}
-		return -1; 
+		return -1; //沒找到回傳 -1
 	} 
 };
 ```
 
 - LeetCode 27 - 移除元素(快慢指針)
->
 ```c
 class Solution {
 public:
 	int removeElement(vector<int>& nums, int val) {
-		int k = 0;
+		int k = 0; // 慢指針，指向「下一個要保留元素」的位置
+		
+		// 快指針 i 負責遍歷整個陣列
 		for (int i = 0; i < nums.size(); i++) {
-			if (nums[i] != val) {
-				nums[k++] = nums[i];
+			if (nums[i] != val) {//不是要移除的 val 就保留它
+				nums[k++] = nums[i]; //將當前元素搬到前面(即覆蓋被移除元素)
 			}
 		}
 		return k; // new length

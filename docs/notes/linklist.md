@@ -1,90 +1,178 @@
 # 鏈結串列（Linked List）
 
-## 1️⃣ 核心概念
-- 鏈結串列是一種線性資料結構，由節點（Node）串接而成。
-- 每個節點包含：
-    - **資料（data）**：儲存節點的值
-    - **指標（next）**：指向下一個節點(Node)
-- 特點：
-    - 節點可以動態增加或刪除
-    - 可以從頭節點開始順序遍歷
-    - 只能單向遍歷，無法直接回到前一個節點
+## 1️⃣ Description
+- **Linked List**是由指標將節點串接起來的線性資料結構。
+- 每一個節點由兩個部分組成：
+    - **資料（data）**：用來儲存資料
+    - **指標（next）**：用來儲存指向下一個節點(Node)的指標
+- 而最後一個節點的指標會指向 null（代表不再連接其他節點）。鏈結串列的起始位置稱為頭節點（Head）。
 
-## 2️⃣ 程式碼
+## 2️⃣ Visualization 
+  ![Visualization](../images/linklist1.png)
+## 3️⃣ Abstract Data Type
+
+| 操作 | 說明 | 單向鏈結串列時間複雜度 |
+|------|------|------------|
+| Create | 建立空鏈結串列 | O(1) |
+| Traverse | 從頭走到尾依序訪問節點 | O(n) |
+| Search(value) | 找某個值是否存在 | O(n) |
+| Insert(pos) | 在指定位置插入新節點（需先走到該位置） | O(n) |
+| Delete(pos) | 刪除指定位置節點（需先走到該位置）| O(n) |
+| Insert at Head | 頭部插入節點 | O(1) |
+| Delete at Head | 頭部刪除節點 | O(1) |
+| Update(pos, value) | 修改某位置節點資料（需先找到該節點）| O(n) |
+
+---
+
+## 4️⃣ Linked List Type
+- 單鏈表
+  ![linklisttype](../images/linklist2.png)
+- 雙向鏈表
+  ![dlinklisttype](../images/linklist3.png)
+
+- 環狀鏈表
+  ![ringlinklisttype](../images/linklist4.png)
+
+## 5️⃣ Linked List Declaration
+- Declaration
 ```c
-#include <stdio.h>
-#include <stdlib.h>
-
-// 定義節點結構 
-typedef struct Node {
-    int data;           // 儲存節點的資料
-    struct Node* next;  // 指向下一個節點的指標
-} Node;
-
-/*
- * 建立新節點
- * 參數: value (節點儲存的資料)
- * 回傳: 指向新節點的指標
- */
-Node* createNode(int value) {
-    // 配置記憶體空間給新節點
-    Node* newNode = (Node*)malloc(sizeof(Node));
-
-    // 檢查是否配置成功
-    if (newNode == NULL) {
-        printf("Memory allocation failed.\n");
-        exit(1);  
-    }
-
-    newNode->data = value;
-    // 初始時next為NULL
-    newNode->next = NULL;
-
-    return newNode;
+struct Node {
+	int val; // 可選的任意資料
+	Node* next // 下一個節點
 }
-
-/*
- * 遍歷鏈結串列並印出節點資訊
- * 參數: head (鏈結串列的頭節點指標)
- * 回傳: 無
- */
-void traverseList(Node* head) {
-    Node* current = head;  // current指向頭節點
-    int index = 0;         
-
-    // 當前節點不為 NULL 時繼續
-    while (current != NULL) {
-        printf("Node %d: Value = %d, Address = %p, Next = %p\n", 
-               index,            // 節點編號
-               current->data,    // 節點資料
-               (void*)current,   // 節點本身位址
-               (void*)current->next // 下一節點位址
-        );
-        current = current->next;
-        index++;
-    }
-}
-
-
+```
+- Initialization
+```c
 int main() {
-    Node* head = createNode(10);          // 第1個節點 (頭節點)
-    head->next = createNode(20);          // 第2個節點
-    head->next->next = createNode(30);    // 第3個節點 (尾節點)
-                                          //鏈結串列：10 -> 20 -> 30 -> NULL
-
-    printf("Traversing the linked list:\n");
-    traverseList(head);
-        
-    // 釋放鏈結串列記憶體 
-    Node* current = head;
-    while (current != NULL) {
-        Node* temp = current;     //暫存目前節點
-        current = current->next; // 移動到下一節點
-        free(temp);              // 釋放當前節點
-    }
-
-    return 0;
+	Node* head = new Node();
+	head->val = 10;
 }
+```
+- Add a new node
+```c
+head->next = new Node();
+head->next->val = 30;
+```
+
+- Insert a new node
+```c
+Node *temp = node->next;
+node->next = new Node();
+node->next->val = 20;
+node->next->next = temp;
+```
+- travel
+```c
+Node *node = head;
+while(node) {
+	cout << node->val << ' ';
+	node = node->next;
+}
+```
+
+## 6️⃣ Practice 
+- LeetCode 707 - Design Linked List
+```c
+class MyLinkedList { 
+public: 
+	struct Node { 
+		int val; 
+		Node* next; 
+		Node(int val):val(val), next(nullptr){} 
+	};
+	
+	MyLinkedList() { 
+		head=new Node(0); 
+		size=0; 
+	} 
+	
+	int get(int index) { 
+		if (index>(size-1) || index<0) { 
+			return -1; 
+		} 
+		
+		Node* curr=head->next; 
+		for(int i=0;i<index;i++){ 
+			curr=curr->next; 
+		} 
+		return curr->val; 
+	} 
+	
+	void addAtHead(int val) { 
+		Node* newNode =new Node(val); 
+		newNode->next=head->next;
+		head->next=newNode; 
+		size++; 
+	} 
+	
+	void addAtTail(int val) { 
+		Node* newNode =new Node(val); 
+		Node* curr=head; 
+		while(curr->next!=nullptr){ 
+			curr=curr->next; 
+		} 
+		
+		curr->next=newNode; 
+		size++; 
+	} 
+	
+	void addAtIndex(int index, int val) { 
+		if(index>size) return; 
+		if(index<0) index = 0; 
+		Node* newNode =new Node(val); 
+		Node* curr=head; 
+		for(int i=0;i<index;i++){ 
+			curr=curr->next; 
+		} 
+		
+		newNode->next=curr->next; 
+		curr->next=newNode; 
+		size++; 
+	} 
+	
+	void deleteAtIndex(int index) { 
+		if (index<0 || index>=size) return; 
+		Node* curr=head; 
+		for(int i=0;i<index;i++){ 
+			curr=curr->next; 
+		} 
+		Node* tmp = curr->next; 
+		curr->next=curr->next->next; 
+		size--; 
+		delete tmp; 
+	}
+
+private: 
+	int size; 
+	Node* head; 
+};
+```
+
+- LeetCode 24 - Swap Nodes in Pairs
+```c
+class Solution { 
+public: 
+	ListNode* swapPairs(ListNode* head) { 
+		ListNode* dummy = new ListNode(0); 
+		dummy->next = head; 
+		ListNode* curr = dummy;
+		
+		while (curr->next != nullptr && curr->next->next != nullptr) { 
+			ListNode* first = curr->next; 
+			ListNode* second = curr->next->next;
+			
+			// Swap 
+			first->next = second->next; 
+			second->next = first; 
+			curr->next = second;
+			
+			// Move to the next pair 
+			curr = curr->next->next; 
+		} 
+		
+		return dummy->next; 
+	} 
+};
 ```
 
 !!! tip "小技巧"
