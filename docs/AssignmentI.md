@@ -12,9 +12,10 @@
 - [Read details](./AssignmentI/Assignment_I.pdf)
 
 **內容說明**
+
 | 類別 | 說明 | 檔案位置 |
 |:------|:------|:---------|
-| 作業說明文件 | 詳細題目 | [`./AssignmentI/Assignment_I.pdf`](../AssignmentI/Assignment_I.pdf) |
+| 作業說明文件 | 詳細題目 | [`Assignment_I.pdf`](https://github.com/tim9910/11401_CS203A/blob/main/Assignment/AssignmentI/Assignment_I.pdf) |
 | 儲存庫建立 | 建立 `11401_CS203A` 的儲存庫 | — |
 | GitHub Pages | 啟用 GitHub Pages（網址：https://{username}.github.io/） | — |
 | README.md 撰寫 | 撰寫個人化頁面（包含姓名、學號、課程與簡介） | — |
