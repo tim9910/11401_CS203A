@@ -19,7 +19,7 @@
 **內容說明**
 | 類別 | 說明 | 檔案位置 |
 |:------|:------|:---------|
-| 作業說明文件 | 詳細題目 | [`./AssignmentI/Assignment_I.pdf`](../AssignmentI/Assignment_I.pdf) |
+| 作業說明文件 | 詳細題目 | [`./AssignmentI/Assignment_I.pdf`](./AssignmentI/Assignment_I.pdf) |
 | 儲存庫建立 | 建立 `11401_CS203A` 的儲存庫 | — |
 | GitHub Pages | 啟用 GitHub Pages（網址：https://{username}.github.io/） | — |
 | README.md 撰寫 | 撰寫個人化頁面（包含姓名、學號、課程與簡介） | — |
@@ -49,12 +49,12 @@
 **內容說明**
 | 類別 | 說明 | 檔案位置 |
 |:------|:------|:---------|
-| 作業說明文件 | 詳細題目 | [`./AssignmentII/Assignment_II.pdf`](../AssignmentII/Assignment_II.pdf) |
+| 作業說明文件 | 詳細題目 | [`./AssignmentII/Assignment_II.pdf`](./AssignmentII/Assignment_II.pdf) |
 | 學生手寫作業紙 | 列印、手寫回答 | （位於上方 PDF 檔內） |
 | 作答方式 | 必須使用筆手寫，清楚呈現每一步排序過程 | — |
 | 繳交方式 | 紙本繳交至 R1102 教室 | — |
 | 截止時間 | 2025/10/07（週二）17:00 截止 | — |
-| 參考答案 | 參考答案檔 | [`./AssignmentII/Assignment_II_Answer.pdf`](../AssignmentII/Assignment_II_Answer.pdf) |
+| 參考答案 | 參考答案檔 | [`./AssignmentII/Assignment_II_Answer.pdf`](./AssignmentII/Assignment_II_Answer.pdf) |
 
 **進度狀態**：✅ 已繳交  
 **完成日期**：2025/10/07（週二） 
@@ -69,7 +69,7 @@
 **內容說明**
 | 類別 | 說明 | 檔案位置 |
 |:------|:------|:---------|
-| 作業說明文件 | 詳細題目 | [`./AssignmentIII/Assignment_III.pdf`](../AssignmentIII/Assignment_III.pdf) |
+| 作業說明文件 | 詳細題目 | [`./AssignmentIII/Assignment_III.pdf`](./AssignmentIII/Assignment_III.pdf) |
 | 學生手寫作業紙 | 列印並手寫回答 | （位於上方 PDF 檔內） |
 | 作答方式 | 必須使用筆手寫，逐步呈現每一次節點值交換的過程 | — |
 | 繳交方式 | 紙本繳交至 R60104 教室 | — |

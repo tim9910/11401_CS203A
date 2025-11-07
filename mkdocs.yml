@@ -11,4 +11,6 @@ nav:
     - 堆疊vs佇列: notes/stackqueue.md    
     - 雜湊表: notes/hashtable.md
   - 作業: 
-    - Assignment1: homework.md
+    - AssignmentI: AssignmentI.md
+    - AssignmentII: AssignmentII.md
+    - AssignmentIII: AssignmentIII.md
