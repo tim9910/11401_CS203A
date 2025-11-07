@@ -1,15 +1,6 @@
 # 資料結構課程儲存庫
 ---
 
-## 目錄
-
-- [課程資訊](#課程資訊)
-- [個人資訊](#個人資訊)
-- [儲存庫描述](#儲存庫描述)
-- [課程記錄/ReadtheDocs](#課程記錄vsReadtheDocs)
-
----
-
 ## 課程資訊
 
 | 項目       | 內容                                    |
@@ -35,6 +26,18 @@
 
 ---
 
-## 課程記錄vsReadtheDocs
+## ReadtheDocs個人網頁
 
 - [https://tim9910-11401cs203a.readthedocs.io/](https://tim9910-11401cs203a.readthedocs.io/)
+
+
+---
+## 作業總覽
+
+| 作業 | 說明 | 詳細連結 |
+|:------|:------|:---------|
+| Assignment I | 建立 GitHub 儲存庫並啟用 GitHub Pages | [查看詳細](./Assignment/README.md) |
+| Assignment II | 陣列選擇排序（Array Selection Sort）手寫作業 | [查看詳細](./Assignment/README.md) |
+| Assignment III | Linked List 選擇排序（Swap Value Version）手寫作業 | [查看詳細](./Assignment/README.md) |
+
+---
