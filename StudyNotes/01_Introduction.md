@@ -1,48 +1,12 @@
 ## Data Structures: Introduction — 重點整理
 
-### **詳細內容請參考老師提供的講義**：  
-[01_Introduction.md](https://github.com/yfhuang/11401_CS203A/blob/main/StudyNote/01_Introduction.md)
+### **詳細內容請參考老師提供的講義**： [01_Introduction.md](https://github.com/yfhuang/11401_CS203A/blob/main/StudyNote/01_Introduction.md)
 
 | 主題 | 重點內容 |
 |---|---|
 | 資料結構（DS） | 資料結構是一種 **用來組織資料，使其能被有效使用** 的方式。 |
 | 靜態資料結構 | 記憶體大小固定，通常存取速度較快。（例：Array） |
 | 動態資料結構 | 記憶體大小不固定，程式執行時可調整，適合需要頻繁更新的情況。（例：Linked List） |
-
----
-
-### 資料結構的操作
-
-| 操作類型 | 操作名稱 | 原文定義重點 |
-|---|---|---|
-| 核心操作 | Create | 分配記憶體或初始化資料結構。 |
-| | Insert | 在指定位置或下一個可用位置加入元素。 |
-| | Read | 讀取元素、不改變其值。 |
-| | Update | 修改已有元素的值。 |
-| | Delete | 移除元素，可能需要移動其他元素來維持結構。 |
-| 基本操作 | Access | 根據索引或位置存取元素。 |
-| | Search | 尋找特定元素的位置。 |
-| | Traverse | 依序訪問所有元素。 |
-| | Copy | 建立相同資料結構的副本。 |
-| | Swap | 交換兩元素位置。 |
-| | Resize | 調整資料結構大小（可擴充或縮小）。 |
-| | Initialize | 設定初始值或預設狀態。 |
-| | Compare | 比較兩個資料結構是否相同或符合某種條件。 |
-| 狀態操作 | isEmpty | 檢查資料結構是否為空。 |
-| | isFull | 檢查資料結構是否達到容量限制。 |
-| | Count | 回傳目前元素數量。 |
-| | Capacity | 回傳最大可容納的元素數量。 |
-| | Clear | 清空資料但不釋放記憶體空間。 |
-| | isSorted | 檢查是否已排序。 |
-| | isBalanced | 檢查資料結構是否維持平衡（例如平衡樹）。 |
-| | isCyclic | 檢查是否存在環（Linked List / Graph 用）。 |
-| | isSymmetric | 檢查結構是否對稱（如樹或矩陣）。 |
-| | isValid | 確保資料結構符合定義規則（如 BST 合法性）。 |
-| 進階操作 | Sort | 將資料排序。 |
-| | Merge | 合併多個資料結構。 |
-| | Split | 分割資料結構。 |
-| | Reverse | 資料順序反轉。 |
-| | Rotate | 依指定位置進行循環位移。 |
 
 ---
 
@@ -64,15 +28,74 @@
 | **時間複雜度** | 衡量演算法執行所需時間隨輸入大小的增長關係。 |
 | **空間複雜度** | 衡量演算法所需記憶體空間隨輸入大小的增長關係。 |
 
-#### 重要符號（漸近表示法）
-| 符號 | 意義 | 說明 |
-|---|---|---|
-| **O (Big-O)** | 上界 / 最壞情況 | 執行時間不會比這更糟 |
-| **Ω (Omega)** | 下界 / 最好情況 | 執行時間至少會這麼好 |
-| **Θ (Theta)** | 緊密界 / 平均或整體 | 執行時間大致落在這範圍 |
-
 ---
 
 ### 常見時間複雜度等級（由快到慢）
 
 O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n³) < O(2ⁿ) < O(n!)
+
+
+### 動態記憶體配置
+
+#### 1️⃣ 核心概念
+- 在程式執行期間向作業系統請求記憶體。
+- 主要函數：
+     - `malloc(size)` → 分配指定大小記憶體，回傳指標
+     - `realloc(ptr, new_size)` → 調整已分配記憶體大小
+     - `free(ptr)` → 釋放記憶體
+
+#### 2️⃣ 程式碼
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *array;
+    int n = 10;
+
+	// 1. 配置 n 個整數大小的連續記憶體
+    array = (int *) malloc(n * sizeof(int));
+    if (array == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+
+	// 2. 初始化已分配陣列元素
+    for(int i = 0; i < n; i++) {
+        array[i] = i + 1;
+    }
+	
+	// 3. 列印初始陣列
+    for (int i = 0; i < n; i++) {
+        printf("%d ", array[i]);
+    }
+
+	// 4. 將陣列擴充到 2n 個整數大小的新記憶體
+    n = n * 2;
+    array = (int *) realloc(array, n * sizeof(int));
+    if (array == NULL) {
+        printf("Reallocation failed\n");
+        return 1;
+    }
+
+    //print出realloc後陣列頭尾的記憶體位址
+    printf("\nAfter realloc memory address: %p\n", (void*)array);
+    printf("After realloc end address   : %p\n", (void*)(array + n * sizeof(n) - 1));
+
+	// 5. 初始化新分配的陣列元素
+    for (int i = n/2; i < n; i++) {
+        array[i] = i + 1;   
+    }
+
+    // 6. 列印擴充後陣列
+    printf("Resized array: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+
+    // 7. 釋放記憶體
+    free(array);
+    return 0;
+}
+```

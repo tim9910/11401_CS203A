@@ -62,8 +62,3 @@ int main() {
     return 0;
 }
 ```
-
-!!! tip "小技巧"
-	- 初始化新分配的空間是必要的，否則可能導致垃圾進垃圾出（GIGO, Garbage In, Garbage Out）的問題
-    - malloc 或 realloc 可能失敗，必須檢查是否為 NULL
-	- 使用完動態記憶體一定要 free()，避免記憶體洩漏。尤其是 realloc 失敗時更要注意釋放原本的記憶體。
