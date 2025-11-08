@@ -42,3 +42,13 @@
 
 
 ---
+# Quizzes 紀錄
+
+這份檔案整理了 **CS203A 課程的小考紀錄**，方便快速查看每次 Quiz 的概況與連結到詳細記錄。
+
+| Quiz | 日期 & 時間 | 地點 | 範圍 | 詳細紀錄 |
+|:----|:------------|:----|:----|:---------|
+| Quiz II | 2025/10/21 16:30~17:00 | YZU Building I, R1102 | Linked list, Stacks, Queues | [查看詳細](./Quizzes/README.md#quiz-ii) |
+| Quiz I  | 2025/09/30 16:30~17:00 | YZU Building I, R1102 | Time complexity, Arrays | [查看詳細](./Quizzes/README.md#quiz-i) |
+
+---
