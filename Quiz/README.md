@@ -10,8 +10,8 @@
   - Stack 為 **後進先出（LIFO）** → 操作：`push`, `pop`, `top`, `isEmpty`
   - Queue 為 **先進先出（FIFO）** → 操作：`enqueue`, `dequeue`, `front`, `isEmpty`
 - **檔案連結：**
-  - [小考題目](./Quiz/Quiz_II.pdf)
-  - [解答](./Quiz/Quiz_II_Answer.pdf)
+  - [小考題目](./Quiz_II.pdf)
+  - [解答](./Quiz_II_Answer.pdf)
 
 
 ## Quiz I
@@ -23,5 +23,5 @@
   - `sizeof(type)` 必須與資料型態一致
   - Big-O 時間複雜度判讀（不需計算，只需理解效率差異）
 - **檔案連結：**
-  - [小考題目](./Quiz/Quiz_I.pdf)
-  - [解答](./Quiz/Quiz_I_Answer.pdf)
+  - [小考題目](./Quiz_I.pdf)
+  - [解答](./Quiz_I_Answer.pdf)
