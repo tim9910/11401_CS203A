@@ -4,9 +4,7 @@
 ---
 
 ### [Introduction](./01_Introduction.md)  <sub>[`詳細內容`](./01_Introduction.md)</sub>
-  介紹資料結構的意義、分類以及為什麼需要學習資料結構。
-### [Abstract Data Type (ADT)](./02_ADT.md)  <sub>[`詳細內容`](./02_ADT.md)</sub>
-  說明「資料結構的行為與操作」的抽象概念，而不是實作細節。
+  介紹資料結構的意義、分類以及動態記憶體配置。
 ### [Array](../docs/notes/array.md)  <sub>[`詳細內容`]
   連續記憶體儲存、可 O(1) 隨機存取，但插入與刪除成本高。
 ### [Linked List](../docs/notes/linklist.md)  <sub>[`詳細內容`](../docs/notes/linklist.md) </sub>

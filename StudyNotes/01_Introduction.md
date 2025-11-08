@@ -1,7 +1,5 @@
 ## Data Structures: Introduction — 重點整理
 
-### **詳細內容請參考老師提供的講義**： [01_Introduction.md](https://github.com/yfhuang/11401_CS203A/blob/main/StudyNote/01_Introduction.md)
-
 | 主題 | 重點內容 |
 |---|---|
 | 資料結構（DS） | 資料結構是一種 **用來組織資料，使其能被有效使用** 的方式。 |

@@ -38,12 +38,11 @@
 
 | 主題 | 檔案連結 | 說明 |
 |---|---|---|
-| Introduction | [01_Introduction.md](./StudyNotes/01_Introduction.md) | 介紹資料結構的意義、分類以及為什麼需要學習資料結構。 |
-| Abstract Data Type (ADT) | [02_ADT.md](./StudyNotes/02_ADT.md) | 說明「資料結構的行為與操作」的抽象概念，而不是實作細節。 |
-| Array | [03_Array.md](./docs/notes/array.md) | 連續記憶體儲存、可 O(1) 隨機存取，但插入與刪除成本高。 |
-| Linked List | [04_LinkedList.md](./docs/notes/linklist.md) | 每個節點以指標串接，插入與刪除效率高，但只能從頭開始走訪。 |
-| Stack & Queue | [05_Stack+Queue.md](./docs/notes/stackqueue.md) | Stack 為 LIFO、Queue 為 FIFO，常用於程式執行流程與排隊系統。 |
-| Hash Table | [06_HashTable.md](./docs/notes/hashtable.md) | 利用雜湊函數實現快速查找與插入，平均時間複雜度 O(1) |
+| Introduction | [Introduction](./StudyNotes/01_Introduction.md) | 介紹資料結構的意義、分類以及動態記憶體配置。 |
+| Array | [Array](./docs/notes/array.md) | 連續記憶體儲存、可 O(1) 隨機存取，但插入與刪除成本高。 |
+| Linked List | [LinkedList](./docs/notes/linklist.md) | 每個節點以指標串接，插入與刪除效率高，但只能從頭開始走訪。 |
+| Stack vs Queue | [Stack vs Queue](./docs/notes/stackqueue.md) | Stack 為 LIFO、Queue 為 FIFO，常用於程式執行流程與排隊系統。 |
+| Hash Table | [HashTable](./docs/notes/hashtable.md) | 利用雜湊函數實現快速查找與插入，平均時間複雜度 O(1) |
 
 ---
 ## 作業總覽
