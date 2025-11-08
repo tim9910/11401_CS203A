@@ -1,7 +1,6 @@
 ## 抽象資料型態（ADT） 
 
-### **詳細內容請參考老師提供的講義**：  
-[01_Introduction.md](https://github.com/yfhuang/11401_CS203A/blob/main/StudyNote/01_Introduction.md)
+### **詳細內容請參考老師提供的講義**： [01_Introduction.md](https://github.com/yfhuang/11401_CS203A/blob/main/StudyNote/01_Introduction.md)
 
 ### 重點整理
 
