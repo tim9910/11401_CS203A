@@ -235,7 +235,7 @@ Email: s1133322@mail.yzu.edu.tw
 ## Analysis
 - Prime vs non-prime `m`: Prime table sizes generally result in better distribution and fewer collisions.
   ##### 根據結果繪製碰撞率比較圖，可以清楚看出：
-  ![Collision Ratio Comparison](images/collisionRatio.png)
+  ![Collision Ratio Comparison](../images/collisionRatio.png)
 
   ##### 1. 以質數(prime)作為 table size 時，碰撞率顯著較低
   > 圖中顯示，質數 m=11、m=37 的碰撞率都比非質數 m=10 更低，尤其是 m=37 (strings=0, integers=0.25) 明顯分佈最均勻、碰撞最少。
