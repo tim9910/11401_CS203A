@@ -40,18 +40,18 @@ Email: s1133322@mail.yzu.edu.tw
 
 ## Results
 - For integers:
-| Table Size (m) | Index Sequence                                                           | Observation                            |
-|----------------|--------------------------------------------------------------------------|----------------------------------------|
-| 10             | 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6               | Index changes很少，高度重複            |
-| 11             | 1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 4, 3, 2, 1, 0, 10, 9, 8, 7, 6             | 呈現完整循環遞減序列：10->9->8-> … ->0 |
-| 37             | 12, 22, 32, 5, 15, 25, 35, 8, 18, 3, 15, 25, 35, 8, 18, 28, 1, 11, 21, 6 | Near-uniform、Index 無明顯規律         |
+  | Table Size (m) | Index Sequence                                                           | Observation                            |
+    |----------------|--------------------------------------------------------------------------|----------------------------------------|
+    | 10             | 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6               | Index changes很少，高度重複            |
+    | 11             | 1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 4, 3, 2, 1, 0, 10, 9, 8, 7, 6             | 呈現完整循環遞減序列：10->9->8-> … ->0 |
+    | 37             | 12, 22, 32, 5, 15, 25, 35, 8, 18, 3, 15, 25, 35, 8, 18, 28, 1, 11, 21, 6 | Near-uniform、Index 無明顯規律         |
 
 - For strings:
-| Table Size (m) | Index Sequence                         | Observation                       |
-|----------------|----------------------------------------|-----------------------------------|
-| 10             | 9, 1, 8, 6, 0, 5, 7, 2, 7, 0           | 偶有跳動、沒有周期性              |
-| 11             | 0, 2, 10, 6, 0, 4, 10, 3, 8, 10        | 偶有跳動、但整體重複性還是高      |
-| 37             | 25, 27, 24, 5, 36, 14, 13, 28, 33, 9   | Near-uniform、跳動大、完全沒重複  |
+  | Table Size (m) | Index Sequence                         | Observation                       |
+  |----------------|----------------------------------------|-----------------------------------|
+  | 10             | 9, 1, 8, 6, 0, 5, 7, 2, 7, 0           | 偶有跳動、沒有周期性              |
+  | 11             | 0, 2, 10, 6, 0, 4, 10, 3, 8, 10        | 偶有跳動、但整體重複性還是高      |
+  | 37             | 25, 27, 24, 5, 36, 14, 13, 28, 33, 9   | Near-uniform、跳動大、完全沒重複  |
 
 ## Compilation, Build, Execution, and Output
 
@@ -235,21 +235,27 @@ Email: s1133322@mail.yzu.edu.tw
 ## Analysis
 - Prime vs non-prime `m`: Prime table sizes generally result in better distribution and fewer collisions.
   ##### 根據結果繪製碰撞率比較圖，可以清楚看出：
-  ![Collision Ratio Comparison](../images/collisionRatio.png)
+  ![Collision Ratio Comparison](images/collisionRatio.png)
 
   ##### 1. 以質數(prime)作為 table size 時，碰撞率顯著較低
   ```
+  <pre style="white-space: pre-wrap;">
   圖中顯示，質數 m=11、m=37 的碰撞率都比非質數 m=10 更低，尤其是 m=37 (strings=0, integers=0.25) 明顯分佈最均勻、碰撞最少。
+  </pre>
   ```
   ##### 2. 非質數(non-prime)有明顯的 clustering 與高碰撞率
   ```
+  <pre style="white-space: pre-wrap;">
   圖中顯示非質數m=10時，strings 碰撞率=0.2; integers 碰撞率=0.8(極高)，容易大量集中到同一區，導致高碰撞率。
+  </pre>
   ```
   ##### 因此，符合雜湊理論：使用質數作為 table size 能減少 clustering，使分佈更均勻(碰撞少)。
 
 - Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
   ```
+  <pre style="white-space: pre-wrap;">
   觀察 integers 測試結果，非質數 m=10 呈現明顯 pattern，執行結果產生大量重複 index 被對映到 2 和 5，形成 clustering，造成 0.8 的高碰撞率。相較之下，質數 m=11 p及 m=37 則分布較均勻。
+  </pre>
   ```
 - Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
   ##### 1. 使用質數(prime) 作為雜湊表大小，可避免產生週期性重複，分佈更均勻。
