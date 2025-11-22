@@ -40,18 +40,18 @@ Email: s1133322@mail.yzu.edu.tw
 
 ## Results
 - For integers:
-  | Table Size (m) | Index Sequence                                                           | Observation                            |
-    |----------------|--------------------------------------------------------------------------|----------------------------------------|
-    | 10             | 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6               | Index changes很少，高度重複            |
-    | 11             | 1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 4, 3, 2, 1, 0, 10, 9, 8, 7, 6             | 呈現完整循環遞減序列：10->9->8-> … ->0 |
-    | 37             | 12, 22, 32, 5, 15, 25, 35, 8, 18, 3, 15, 25, 35, 8, 18, 28, 1, 11, 21, 6 | Near-uniform、Index 無明顯規律         |
+  | Table Size (m) | Index Sequence                                                              | Observation                       |
+    |----------------|---------------------------------------------------------------------------|-----------------------------------|
+    | 10             | 3, 4, 5, 6, 7, 8, 9, 0, 1, 3, 6, 7, 8, 9, 0, 1, 2, 3, 4, 6                | Index 呈現循環、重複明顯          |
+    | 11             | 8, 0, 3, 6, 9, 1, 4, 7, 10, 2, 10, 2, 5, 8, 0, 3, 6, 9, 1, 4              | 部分 Index 重複                   |
+    | 37             | 23, 1, 16, 31, 9, 24, 2, 17, 32, 12, 35, 13, 28, 6, 21, 36, 14, 29, 7, 24 | Near-uniform、Index 無明顯規律    |
 
 - For strings:
-  | Table Size (m) | Index Sequence                         | Observation                       |
-  |----------------|----------------------------------------|-----------------------------------|
-  | 10             | 9, 1, 8, 6, 0, 5, 7, 2, 7, 0           | 偶有跳動、沒有周期性              |
-  | 11             | 0, 2, 10, 6, 0, 4, 10, 3, 8, 10        | 偶有跳動、但整體重複性還是高      |
-  | 37             | 25, 27, 24, 5, 36, 14, 13, 28, 33, 9   | Near-uniform、跳動大、完全沒重複  |
+  | Table Size (m) | Index Sequence                         | Observation                    |
+  |----------------|----------------------------------------|--------------------------------|
+  | 10             | 9, 1, 8, 6, 0, 5, 7, 2, 7, 0           | 無週期性、部分 Index 重複      |
+  | 11             | 6, 2, 2, 3, 5, 2, 1, 1, 7, 5           | 無週期性、部分 Index 重複      |
+  | 37             | 9, 22, 10, 2, 7, 5, 8, 11, 9, 0        | Near-uniform、數值跳動幅度大   |
 
 ## Compilation, Build, Execution, and Output
 
@@ -97,84 +97,84 @@ Email: s1133322@mail.yzu.edu.tw
 ### Result Snapshot
 - Example output for integers:
   ```
-  === Hash Function Observation (C++ Version) ===
+	=== Hash Function Observation (C++ Version) ===
 
 	=== Table Size m = 10 ===
 	Key     Index
 	-----------------
-	21      2
-	22      2
-	23      2
-	24      2
-	25      2
-	26      2
-	27      2
-	28      2
-	29      2
+	21      3
+	22      4
+	23      5
+	24      6
+	25      7
+	26      8
+	27      9
+	28      0
+	29      1
 	30      3
-	51      5
-	52      5
-	53      5
-	54      5
-	55      5
-	56      5
-	57      5
-	58      5
-	59      5
+	51      6
+	52      7
+	53      8
+	54      9
+	55      0
+	56      1
+	57      2
+	58      3
+	59      4
 	60      6
 
 	=== Table Size m = 11 ===
 	Key     Index
 	-----------------
-	21      1
+	21      8
 	22      0
-	23      10
-	24      9
-	25      8
-	26      7
-	27      6
-	28      5
-	29      4
-	30      3
-	51      4
-	52      3
-	53      2
-	54      1
+	23      3
+	24      6
+	25      9
+	26      1
+	27      4
+	28      7
+	29      10
+	30      2
+	51      10
+	52      2
+	53      5
+	54      8
 	55      0
-	56      10
-	57      9
-	58      8
-	59      7
-	60      6
+	56      3
+	57      6
+	58      9
+	59      1
+	60      4
 
 	=== Table Size m = 37 ===
 	Key     Index
 	-----------------
-	21      12
-	22      22
-	23      32
-	24      5
-	25      15
-	26      25
-	27      35
-	28      8
-	29      18
-	30      3
-	51      15
-	52      25
-	53      35
-	54      8
-	55      18
-	56      28
-	57      1
-	58      11
-	59      21
-	60      6	
+	21      23
+	22      1
+	23      16
+	24      31
+	25      9
+	26      24
+	27      2
+	28      17
+	29      32
+	30      12
+	51      35
+	52      13
+	53      28
+	54      6
+	55      21
+	56      36
+	57      14
+	58      29
+	59      7
+	60      24
   ```
 
 - Example output for strings:
   ```
-  === String Hash (m = 10) ===
+	=== String Hash (m = 10) ===
 	Key     Index
 	-----------------
 	cat     9
@@ -191,44 +191,45 @@ Email: s1133322@mail.yzu.edu.tw
 	=== String Hash (m = 11) ===
 	Key     Index
 	-----------------
-	cat     0
+	cat     6
 	dog     2
-	bat     10
-	cow     6
-	ant     0
-	owl     4
-	bee     10
-	hen     3
-	pig     8
-	fox     10
+	bat     2
+	cow     3
+	ant     5
+	owl     2
+	bee     1
+	hen     1
+	pig     7
+	fox     5
 
 	=== String Hash (m = 37) ===
 	Key     Index
 	-----------------
-	cat     25
-	dog     27
-	bat     24
-	cow     5
-	ant     36
-	owl     14
-	bee     13
-	hen     28
-	pig     33
-	fox     9
+	cat     9
+	dog     22
+	bat     10
+	cow     2
+	ant     7
+	owl     5
+	bee     8
+	hen     11
+	pig     9
+	fox     0
+
   ```
 
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 - Example output for integers:
   ```
-  Hash table (m=10): [2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6]
-  Hash table (m=11): [1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 4, 3, 2, 1, 0, 10, 9, 8, 7, 6]
-  Hash table (m=37): [12, 22, 32, 5, 15, 25, 35, 8, 18, 3, 15, 25, 35, 8, 18, 28, 1, 11, 21, 6]
+  Hash table (m=10): [3, 4, 5, 6, 7, 8, 9, 0, 1, 3, 6, 7, 8, 9, 0, 1, 2, 3, 4, 6]
+  Hash table (m=11): [8, 0, 3, 6, 9, 1, 4, 7, 10, 2, 10, 2, 5, 8, 0, 3, 6, 9, 1, 4]
+  Hash table (m=37): [23, 1, 16, 31, 9, 24, 2, 17, 32, 12, 35, 13, 28, 6, 21, 36, 14, 29, 7, 24]
   ```
 - Example output for strings:
   ```
   Hash table (m=10): [9, 1, 8, 6, 0, 5, 7, 2, 7, 0]
-  Hash table (m=11): [0, 2, 10, 6, 0, 4, 10, 3, 8, 10]
-  Hash table (m=37): [25, 27, 24, 5, 36, 14, 13, 28, 33, 9]
+  Hash table (m=11): [6, 2, 2, 3, 5, 2, 1, 1, 7, 5]
+  Hash table (m=37): [9, 22, 10, 2, 7, 5, 8, 11, 9, 0]
   ```
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 
@@ -238,15 +239,15 @@ Email: s1133322@mail.yzu.edu.tw
   ![Collision Ratio Comparison](../images/collisionRatio.png)
 
   ##### 1. 以質數(prime)作為 table size 時，碰撞率顯著較低
-  > 圖中顯示，質數 m=11、m=37 的碰撞率都比非質數 m=10 更低，尤其是 m=37 (strings=0, integers=0.25) 明顯分佈最均勻、碰撞最少。
+  > 圖中顯示，質數 m=11、m=37 的碰撞率都比非質數 m=10 更低，尤其是 m=37 (strings=0.1, integers=0.05) 明顯分佈最均勻、碰撞最少。
 
   ##### 2. 非質數(non-prime)有明顯的 clustering 與高碰撞率
-  > 圖中顯示非質數m=10時，strings 碰撞率=0.2; integers 碰撞率=0.8(極高)，容易大量集中到同一區，導致高碰撞率。
+  > 圖中顯示非質數m=10時，strings 碰撞率=0.2; integers 碰撞率達一半，容易大量集中到同一區，造成高碰撞率。
 
   ##### 因此，符合雜湊理論：使用質數作為 table size 能減少 clustering，使分佈更均勻(碰撞少)。
 
 - Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
-  > 觀察 integers 測試結果，非質數 m=10 呈現明顯 pattern，執行結果產生大量重複 index 被對映到 2 和 5，形成 clustering，造成 0.8 的高碰撞率。相較之下，質數 m=11 p及 m=37 則分佈較均勻。
+  > 觀察 integers 測試結果，非質數 m=10 呈現明顯 pattern，執行結果產生重複 index 循環(6->7->8->9->0)，造成 index 聚集在少數區域，形成 clustering，造成高碰撞率。相較之下，質數 m=37 則分佈較均勻。
 
 - Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
   >1.使用質數(prime) 作為雜湊表大小，可避免產生週期性重複，分佈更均勻。<br>
