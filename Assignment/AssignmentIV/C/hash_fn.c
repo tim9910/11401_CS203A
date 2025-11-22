@@ -14,14 +14,32 @@
  */
 
 #include "hash_fn.h"
+static const int BASE = 31;
+int charToNum(char c) {
+    if (c >= 'A' && c <= 'Z')
+        return c - 'A';  // 0 ~ 25
+    else if (c >= 'a' && c <= 'z')
+        return 26 + (c - 'a'); // 26 ~ 51
+    else 
+        return -1;  // other
+}
 
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
-    return key % m;  // division method example
+    int r = 0;
+    while (key > 0) {
+        r = r * 10 + (key % 10);
+        key /= 10;
+    }
+    return (r * BASE + key) % m;
 }
 
 int myHashString(const char* str, int m) {
     unsigned long hash = 0;
-    // TODO: replace with your own design
-    return (int)(hash % m); // basic division method
+    for (char c : str) {
+        int num = charToNum(c);
+        if (num != -1) {
+            hash = (hash * BASE + static_cast<unsigned long>(num)) % m;
+        }
+    }
+    return static_cast<int>(hash);
 }
