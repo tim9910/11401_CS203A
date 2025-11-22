@@ -15,7 +15,7 @@ Email: s1133322@mail.yzu.edu.tw
       r = digits(key) reversed
       RETURN (r * BASE + key) MOD m
   ```
-- Rationale: [Explain your design choices and how they minimize collisions.]
+- Rationale: 把整數的位數先反轉，再用乘法放大差異，最後用質數大小的 m 去做 MOD，讓整體分佈更平均，減少碰撞。
 
 ### Non-integer Keys
 - Formula / pseudocode:
@@ -28,7 +28,7 @@ Email: s1133322@mail.yzu.edu.tw
               hash = hash * BASE + num
       RETURN hash MOD m
   ```
-- Rationale: [Explain your approach and its effectiveness for non-integer keys.]
+- Rationale: 把字串逐字轉成數字並用乘法累加，不讓相似的字串算出的結果相近，再搭配用質數大小的 m 去做 MOD，讓字串分佈較均勻、減少碰撞。
 
 ## Experimental Setup
 - Table sizes tested (m): 10, 11, 37
@@ -246,7 +246,7 @@ Email: s1133322@mail.yzu.edu.tw
   ##### 因此，符合雜湊理論：使用質數作為 table size 能減少 clustering，使分佈更均勻(碰撞少)。
 
 - Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
-  > 觀察 integers 測試結果，非質數 m=10 呈現明顯 pattern，執行結果產生大量重複 index 被對映到 2 和 5，形成 clustering，造成 0.8 的高碰撞率。相較之下，質數 m=11 p及 m=37 則分布較均勻。
+  > 觀察 integers 測試結果，非質數 m=10 呈現明顯 pattern，執行結果產生大量重複 index 被對映到 2 和 5，形成 clustering，造成 0.8 的高碰撞率。相較之下，質數 m=11 p及 m=37 則分佈較均勻。
 
 - Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
   >1.使用質數(prime) 作為雜湊表大小，可避免產生週期性重複，分佈更均勻。<br>
