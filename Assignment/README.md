@@ -83,7 +83,7 @@
 | 類別 | 說明 | 檔案位置 |
 |:------|:------|:---------|
 | 作業說明文件 | 詳細題目 | [`Assignment_IV`](https://github.com/yfhuang/11401_CS203A/blob/main/Assignment/AssignmentIV/README.md) |
-| 繳交方式 | 發佈至 GitHub | — |
+| 繳交方式 | 發佈至 GitHub | [`11401_CS203A`](./AssignmentIV) |
 | 截止時間 | 2025/11/23:59 截止 | — |
 
 
