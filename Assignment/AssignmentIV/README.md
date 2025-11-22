@@ -239,13 +239,13 @@ Email: s1133322@mail.yzu.edu.tw
 
   ##### 1. 以質數(prime)作為 table size 時，碰撞率顯著較低
   ```
-  <pre style="white-space: pre-wrap;">
+  <pre>
   圖中顯示，質數 m=11、m=37 的碰撞率都比非質數 m=10 更低，尤其是 m=37 (strings=0, integers=0.25) 明顯分佈最均勻、碰撞最少。
   </pre>
   ```
   ##### 2. 非質數(non-prime)有明顯的 clustering 與高碰撞率
   ```
-  <pre style="white-space: pre-wrap;">
+  <pre>
   圖中顯示非質數m=10時，strings 碰撞率=0.2; integers 碰撞率=0.8(極高)，容易大量集中到同一區，導致高碰撞率。
   </pre>
   ```
@@ -253,7 +253,7 @@ Email: s1133322@mail.yzu.edu.tw
 
 - Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
   ```
-  <pre style="white-space: pre-wrap;">
+  <pre>
   觀察 integers 測試結果，非質數 m=10 呈現明顯 pattern，執行結果產生大量重複 index 被對映到 2 和 5，形成 clustering，造成 0.8 的高碰撞率。相較之下，質數 m=11 p及 m=37 則分布較均勻。
   </pre>
   ```
