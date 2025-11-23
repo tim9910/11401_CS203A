@@ -260,3 +260,15 @@ Email: s1133322@mail.yzu.edu.tw
 1. Designing hash functions requires balancing simplicity and effectiveness to minimize collisions.
 2. Table size significantly impacts the uniformity of the hash distribution, with prime sizes performing better.
 3. The design using a prime table size and a linear transformation formula produced the most uniform index sequence.
+>
+針對上述 Reflection，在設計 hash function 時，我的考量與反思如下：
+1. **簡單性與效果**  
+我選擇線性轉換公式，計算簡單且能把索引分散開。我認為 hash 的主要作用是希望可以快速找到資料，雖然複雜的公式碰撞可能少一點，但運算會變慢，查找效率就會受到影響。因此，簡單又合理的公式是一個必要的平衡，既能維持速度，也能減少碰撞集中。
+
+2. **m 大小**  
+我測試非質數(10)與質數(11、37)作為表格大小。結果顯示，質數表格分布較均勻、碰撞較少，因為它可以避免索引循環或集中；非質數表格則容易出現 clustering，碰撞率較高。不過，資料量少時這種差異不明顯，而表格太大又會浪費記憶體；資料量多時，質數表格的優勢就比較明顯。綜合考量，選擇比資料量略大一點的質數作表格大小，似乎能兼顧分佈均勻與資源使用效率
+
+3. **hash function設計**  
+   對整數採位數反轉再用乘法累加；對字串則是將每個字元(A-Z, a-z)轉成數字(0~52)再累加乘法。這樣設計可以讓相似的資料映射到不同的索引，避免碰撞集中。  
+
+最後，我也發現一些參數(例如BASE)，理論上可以設成比實際資料量略大一點的質數，但仍需透過實際驗證來找最合適的值。而且資料的分佈也會影響 hash table，例如整數連續或字串長短不一樣，碰撞率可能差很多。因此，在設計時必須考慮這些因素，並透過觀察資料與驗證結果來調整。
