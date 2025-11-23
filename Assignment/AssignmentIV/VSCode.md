@@ -1,6 +1,7 @@
 # Connect to GitHub with VSCode
 
 ## Prerequisites
+This project is developed and tested on **Windows 11**.  
 Before you begin, ensure you have the following:
 - Visual Studio Code installed on your computer. [Download VS Code here](https://code.visualstudio.com/)
 - Git installed and configured on your system. [Download Git here](https://git-scm.com/).

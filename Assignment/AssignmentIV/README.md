@@ -7,6 +7,9 @@ evaluate their efficiency, and understand their applications in computer science
 Developer: 林晉霆  
 Email: s1133322@mail.yzu.edu.tw 
 
+## Environment Setup
+本程式於 Windows 作業系統環境中開發，並使用 Visual Studio Code(VS Code) 作為主要的整合式開發環境。程式碼以 Git 進行版本控制，並連接至 GitHub 遠端儲存庫 以進行同步與協作。
+
 ## My Hash Function
 ### Integer Keys 
 - Formula / pseudocode:
