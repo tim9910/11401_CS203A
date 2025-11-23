@@ -8,7 +8,7 @@ Developer: 林晉霆
 Email: s1133322@mail.yzu.edu.tw 
 
 ## Environment 
-本程式於 **Windows** 作業系統環境中開發，並使用 **Visual Studio Code(VS Code)** 作為主要的整合式開發環境。程式碼以 **Git** 進行版本控制，並連接至 **GitHub** 遠端儲存庫以進行同步與協作。此程式使用 **cl.exe** 作為編譯器。
+本程式於 **Windows** 作業系統環境中開發，並使用 **Visual Studio Code(VS Code)** 作為主要的整合式開發環境。程式碼以 **Git** 進行版本控制，並連接至 **GitHub** 遠端儲存庫以進行同步與協作。程式編譯使用 Microsoft Visual C++ 編譯器( **cl.exe** )作為編譯器。
 
 ## My Hash Function
 ### Integer Keys 
