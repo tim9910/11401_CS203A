@@ -138,24 +138,27 @@
     │        └── 缺點：搜尋/插入/刪除退化成 O(n)
     │      
     ├── 8. Rebalancing    
->>>>| data structure | Invariant | Rebalancing Trigger | Criterion | Adjustment |
->>>>|--------|------------------------|------------|---------|----------------|
->>>>| **Max Heap** | Heap Property（parent ≥ child） | Insert、Delete | Key Comparison | Heapify-up（swap） |
->>>>| **Min Heap** | Heap Property（parent ≤ child） | Insert、Delete | Key Comparison | Heapify-down（swap） |
->>>>| **AVL Tree** | 高度平衡（\|左-右\| ≤ 1） | Insert、Delete | 高度差 | 旋轉（LL、RR、LR、RL） |
->>>>| **Red-Black Tree** | 顏色規則、黑高度一致 | Insert、Delete | 違反紅黑規則 | 換色 + 旋轉 |
+
+| data structure | Invariant | Rebalancing Trigger | Criterion | Adjustment |
+|--------|------------------------|------------|---------|----------------|
+| **Max Heap** | Heap Property（parent ≥ child） | Insert、Delete | Key Comparison | Heapify-up（swap） |
+| **Min Heap** | Heap Property（parent ≤ child） | Insert、Delete | Key Comparison | Heapify-down（swap） |
+| **AVL Tree** | 高度平衡（\|左-右\| ≤ 1） | Insert、Delete | 高度差 | 旋轉（LL、RR、LR、RL） |
+| **Red-Black Tree** | 顏色規則、黑高度一致 | Insert、Delete | 違反紅黑規則 | 換色 + 旋轉 |
     └── 9. Performance  
              ├── Time Complexity
->>>>>>>| data structure | Operation | Worst | Average | Note |
->>>>>>>|--------|------------------------|------------|---------|----------------|
->>>>>>>| **Max/Min Heap** | Insert/Delete | O(log n) | O(log n) |  |
->>>>>>>| **AVL Tree** | Insert/Delete/Search | O(log n) | O(log n) |  |
->>>>>>>| **Red-Black Tree** | Insert/Delete/Search | O(log n) | O(log n) |  |
->>>>>>>| **Binary Search Tree(BST)** | Insert/Delete/Search | O(n) | O(log n) | 平衡樹 O(log n) ; Skewed Tree O(n)最壞 |
-             └── Space Complexity     
->>>>>>>| data structure | Space Complexity | Note |
->>>>>>>|--------|------------------------|------------|
->>>>>>>| **Max/Min Heap** | O(n) |  |
->>>>>>>| **AVL Tree** | O(n) |  |
->>>>>>>| **Red-Black Tree** | O(n) |  |
->>>>>>>| **Binary Search Tree(BST)** | O(n) |  |
+
+| data structure | Operation | Worst | Average | Note |
+|--------|------------------------|------------|---------|----------------|
+| **Max/Min Heap** | Insert/Delete | O(log n) | O(log n) |  |
+| **AVL Tree** | Insert/Delete/Search | O(log n) | O(log n) |  |
+| **Red-Black Tree** | Insert/Delete/Search | O(log n) | O(log n) |  |
+| **Binary Search Tree(BST)** | Insert/Delete/Search | O(n) | O(log n) | 平衡樹 O(log n) ; Skewed Tree O(n)最壞 |
+             └── Space Complexity
+     
+| data structure | Space Complexity | Note |
+|--------|------------------------|------------|
+| **Max/Min Heap** | O(n) |  |
+| **AVL Tree** | O(n) |  |
+| **Red-Black Tree** | O(n) |  |
+| **Binary Search Tree(BST)** | O(n) |  |
