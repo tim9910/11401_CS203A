@@ -43,6 +43,7 @@
 | Linked List | [LinkedList](./docs/notes/linklist.md) | 每個節點以指標串接，插入與刪除效率高，但只能從頭開始走訪。 |
 | Stack vs Queue | [Stack vs Queue](./docs/notes/stackqueue.md) | Stack 為 LIFO、Queue 為 FIFO，常用於程式執行流程與排隊系統。 |
 | Hash Table | [HashTable](./docs/notes/hashtable.md) | 利用雜湊函數實現快速查找與插入，平均時間複雜度 O(1) |
+| Tree and Heap | [Tree and Heap](./docs/notes/tree&heap.md) | 樹與堆是常用的非線性資料結構 |
 
 ---
 ## 作業總覽

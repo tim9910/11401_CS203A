@@ -10,11 +10,13 @@ nav:
     - 陣列(Array): notes/array.md
     - 堆疊vs佇列: notes/stackqueue.md    
     - 雜湊表: notes/hashtable.md
+    - Tree and Heap: notes/tree&heap.md
   - 作業: 
     - AssignmentI: AssignmentI.md
     - AssignmentII: AssignmentII.md
     - AssignmentIII: AssignmentIII.md
     - AssignmentIV: AssignmentIV.md
+    - AssignmentV: AssignmentV.md
   - 小考: 
     - QuizI: QuizI.md
     - QuizII: QuizII.md    

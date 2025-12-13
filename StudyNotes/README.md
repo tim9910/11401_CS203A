@@ -13,7 +13,8 @@
   Stack 為 LIFO、Queue 為 FIFO，常用於程式執行流程與排隊系統。
 ### [Hash Table](../docs/notes/hashtable.md)  <sub>[`詳細內容`](../docs/notes/hashtable.md)</sub>
   利用雜湊函數實現快速查找與插入，平均時間複雜度 O(1)。
- 
+### [Tree and Heap](../docs/notes/tree&heap.md)  <sub>[`詳細內容`](../docs/notes/tree&heap.md)</sub>
+  樹與堆是常用的非線性資料結構。 
 
 
 ---
