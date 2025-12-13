@@ -54,7 +54,7 @@
 | Assignment II | 陣列選擇排序（Array Selection Sort）手寫作業 | [查看詳細](./Assignment/README.md#assignment-ii--array-selection-sort) |
 | Assignment III | Linked List 選擇排序（Swap Value Version）手寫作業 | [查看詳細](./Assignment/README.md#assignment-iii--linked-list-selection-sort-swap-value-version) |
 | Assignment IV | Hash Function Design & Observation | [查看詳細](./Assignment/README.md#assignmentiv--hash---design-your-hash-function) |
-
+| Assignment V | Tree | [查看詳細](./Assignment/README.md#assignmentv--tree) |
 
 ---
 # Quizzes 紀錄
