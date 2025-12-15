@@ -145,6 +145,7 @@
 | **Min Heap** | Heap Property（parent ≤ child） | Insert、Delete | Key Comparison | Heapify-down（swap） |
 | **AVL Tree** | 高度平衡（\|左-右\| ≤ 1） | Insert、Delete | 高度差 | 旋轉（LL、RR、LR、RL） |
 | **Red-Black Tree** | 顏色規則、黑高度一致 | Insert、Delete | 違反紅黑規則 | 換色 + 旋轉 |
+
     └── 9. Performance  
              ├── Time Complexity
 
@@ -154,6 +155,7 @@
 | **AVL Tree** | Insert/Delete/Search | O(log n) | O(log n) |  |
 | **Red-Black Tree** | Insert/Delete/Search | O(log n) | O(log n) |  |
 | **Binary Search Tree(BST)** | Insert/Delete/Search | O(n) | O(log n) | 平衡樹 O(log n) ; Skewed Tree O(n)最壞 |
+
              └── Space Complexity
      
 | data structure | Space Complexity | Note |

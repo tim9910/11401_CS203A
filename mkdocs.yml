@@ -11,6 +11,7 @@ nav:
     - 堆疊vs佇列: notes/stackqueue.md    
     - 雜湊表: notes/hashtable.md
     - Tree and Heap: notes/tree&heap.md
+    - Graph: notes/graph.md
   - 作業: 
     - AssignmentI: AssignmentI.md
     - AssignmentII: AssignmentII.md
