@@ -44,7 +44,7 @@
 | Stack vs Queue | [Stack vs Queue](./docs/notes/stackqueue.md) | Stack 為 LIFO、Queue 為 FIFO，常用於程式執行流程與排隊系統。 |
 | Hash Table | [HashTable](./docs/notes/hashtable.md) | 利用雜湊函數實現快速查找與插入，平均時間複雜度 O(1) |
 | Tree and Heap | [Tree and Heap](./docs/notes/tree&heap.md) | 樹與堆是常用的非線性資料結構 |
-| Graph | [Tree and Heap](./docs/notes/graph.md) | 用節點和邊表示關係，方便找到路徑、走訪每個節點（DFS/BFS） |
+| Graph | [Graph](./docs/notes/graph.md) | 用節點和邊表示關係，方便找到路徑、走訪每個節點（DFS/BFS） |
 
 ---
 ## 作業總覽
