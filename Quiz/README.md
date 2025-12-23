@@ -7,7 +7,7 @@
 - **範圍：** Tree, Heap, Graph  
 - **檔案連結：**
   - [小考題目](./Quiz_V.pdf)
-  - [解答](./Quiz_V_Answer.pdf)
+  - [解答](./Quiz_V_answer.pdf)
   
 ## Quiz IV
 - **時間：** 2025/12/16，17:00  
@@ -15,7 +15,7 @@
 - **範圍：** Tree, Heap, Graph  
 - **檔案連結：**
   - [小考題目](./Quiz_IV.pdf)
-  - [解答](./Quiz_IV_Answer.pdf)
+  - [解答](./Quiz_IV_answer.pdf)
   
 ## Quiz III
 - **時間：** 2025/11/25，16:30~17:00  
@@ -25,7 +25,7 @@
   - Hash Table 定義、Hash Function 計算、碰撞處理
 - **檔案連結：**
   - [小考題目](./Quiz_III.pdf)
-  - [解答](./Quiz_III_Answer.pdf)
+  - [解答](./Quiz_III_answer.pdf)
   
 ## Quiz II
 - **時間：** 2025/10/21，16:30~17:00  
