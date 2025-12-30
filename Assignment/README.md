@@ -47,7 +47,7 @@
 | 作答方式 | 必須使用筆手寫，清楚呈現每一步排序過程 | — |
 | 繳交方式 | 紙本繳交至 R1102 教室 | — |
 | 截止時間 | 2025/10/07（週二）17:00 截止 | — |
-| 作答內容 | 個人作答檔案 | [`./AssignmentII/Assignment2.pdf`](../AssignmentII/Assignment2.pdf) |
+| 作答內容 | 個人作答檔案 | [`./AssignmentII/Assignment2.pdf`](./AssignmentII/Assignment2.pdf) |
 | 參考答案 | 參考答案檔 | [`./AssignmentII/Assignment_II_Answer.pdf`](./AssignmentII/Assignment_II_Answer.pdf) |
 
 **進度狀態**：✅ 已繳交  
@@ -68,8 +68,8 @@
 | 作答方式 | 必須使用筆手寫，逐步呈現每一次節點值交換的過程 | — |
 | 繳交方式 | 紙本繳交至 R60104 教室 | — |
 | 截止時間 | 2025/10/20（週一）10:00 截止 | — |
-| 作答內容 | 個人作答檔案 | [`./AssignmentIII/Assignment3.pdf`](../AssignmentIII/Assignment3.pdf) |
-| 參考答案 | 參考答案檔 | [`./AssignmentIII/Assignment_III_Answer.pdf`](../AssignmentIII/Assignment_III_Answer.pdf) |
+| 作答內容 | 個人作答檔案 | [`./AssignmentIII/Assignment3.pdf`](./AssignmentIII/Assignment3.pdf) |
+| 參考答案 | 參考答案檔 | [`./AssignmentIII/Assignment_III_Answer.pdf`](./AssignmentIII/Assignment_III_Answer.pdf) |
 
 **進度狀態**：✅ 已繳交  
 **完成日期**：2025/10/20（週一）
