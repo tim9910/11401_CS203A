@@ -8,5 +8,6 @@
   - Big-O 時間複雜度判讀（不需計算，只需理解效率差異）
 - **檔案連結：**
   - [小考題目](https://github.com/tim9910/11401_CS203A/blob/main/Quiz/Quiz_I.pdf)
+  - [作答過程](https://github.com/tim9910/11401_CS203A/blob/main/Quiz/Quiz1_ans.pdf)
   - [解答](https://github.com/tim9910/11401_CS203A/blob/main/Quiz/Quiz_I_Answer.pdf)
   

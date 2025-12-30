@@ -12,6 +12,7 @@
 | 作答方式 | 必須使用筆手寫，清楚呈現每一步排序過程 | — |
 | 繳交方式 | 紙本繳交至 R1102 教室 | — |
 | 截止時間 | 2025/10/07（週二）17:00 截止 | — |
+| 作答內容 | 個人作答檔案 | [`Assignment2.pdf`](https://github.com/tim9910/11401_CS203A/blob/main/Assignment/AssignmentII/Assignment2.pdf) |
 | 參考答案 | 參考答案檔 | [`Assignment_II_Answer.pdf`](https://github.com/tim9910/11401_CS203A/blob/main/Assignment/AssignmentII/Assignment_II_Answer.pdf) |
 
 **進度狀態**：✅ 已繳交  

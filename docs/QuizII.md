@@ -8,5 +8,6 @@
   - Queue 為 **先進先出（FIFO）** → 操作：`enqueue`, `dequeue`, `front`, `isEmpty`
 - **檔案連結：**
   - [小考題目](https://github.com/tim9910/11401_CS203A/blob/main/Quiz/Quiz_II.pdf)
+  - [作答過程](https://github.com/tim9910/11401_CS203A/blob/main/Quiz/Quiz2_ans.pdf)
   - [解答](https://github.com/tim9910/11401_CS203A/blob/main/Quiz/Quiz_II_Answer.pdf)
   

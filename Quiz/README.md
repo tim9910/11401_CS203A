@@ -15,6 +15,7 @@
 - **範圍：** Tree, Heap, Graph  
 - **檔案連結：**
   - [小考題目](./Quiz_IV.pdf)
+  - [作答過程](./Quiz4_ans.pdf)
   - [解答](./Quiz_IV_answer.pdf)
   
 ## Quiz III
@@ -25,6 +26,7 @@
   - Hash Table 定義、Hash Function 計算、碰撞處理
 - **檔案連結：**
   - [小考題目](./Quiz_III.pdf)
+  - [作答過程](./Quiz3_ans.pdf)
   - [解答](./Quiz_III_answer.pdf)
   
 ## Quiz II
@@ -37,6 +39,7 @@
   - Queue 為 **先進先出（FIFO）** → 操作：`enqueue`, `dequeue`, `front`, `isEmpty`
 - **檔案連結：**
   - [小考題目](./Quiz_II.pdf)
+  - [作答過程](./Quiz2_ans.pdf)
   - [解答](./Quiz_II_Answer.pdf)
 
 
@@ -50,4 +53,5 @@
   - Big-O 時間複雜度判讀（不需計算，只需理解效率差異）
 - **檔案連結：**
   - [小考題目](./Quiz_I.pdf)
+  - [作答過程](./Quiz1_ans.pdf)
   - [解答](./Quiz_I_Answer.pdf)
