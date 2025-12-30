@@ -45,6 +45,7 @@
 | Hash Table | [HashTable](./docs/notes/hashtable.md) | 利用雜湊函數實現快速查找與插入，平均時間複雜度 O(1) |
 | Tree and Heap | [Tree and Heap](./docs/notes/tree&heap.md) | 樹與堆是常用的非線性資料結構 |
 | Graph | [Graph](./docs/notes/graph.md) | 用節點和邊表示關係，方便找到路徑、走訪每個節點（DFS/BFS） |
+| 整體比較 | [Summary](./docs/notes/summary.md) | 整理不同資料結構在結構與效率上的差別，幫助判斷在實際使用時該如何選擇。 |
 
 ---
 ## 作業總覽
